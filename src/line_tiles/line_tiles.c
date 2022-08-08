@@ -29,6 +29,4 @@ void drawLineTiles(SDL_Renderer *renderer) {
       SDL_RenderDrawLineF(renderer, startX, startY, endX, endY);
     }
   }
-
-  SDL_RenderPresent(renderer);
 }

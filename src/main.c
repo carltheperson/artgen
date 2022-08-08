@@ -6,6 +6,7 @@
 #include <time.h>
 
 #include "./line_tiles/line_tiles.h"
+#include "./static_dust/static_dust.h"
 
 int main(int argc, char *argv[]) {
   if (argc == 1) {
@@ -28,10 +29,14 @@ int main(int argc, char *argv[]) {
 
   if (strcmp(piece, "line_tiles") == 0) {
     drawLineTiles(renderer);
+  } else if (strcmp(piece, "static_dust") == 0) {
+    drawStaticDust(renderer);
   } else {
     printf("Unkown peice\n");
     exit(1);
   }
+
+  SDL_RenderPresent(renderer);
 
   SDL_Event event;
   while (SDL_WaitEvent(&event)) {
