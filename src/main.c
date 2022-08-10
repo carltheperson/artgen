@@ -6,6 +6,7 @@
 #include <time.h>
 
 #include "./line_tiles/line_tiles.h"
+#include "./poly_place/poly_place.h"
 #include "./static_dust/static_dust.h"
 
 int main(int argc, char *argv[]) {
@@ -25,12 +26,16 @@ int main(int argc, char *argv[]) {
 
   SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
+  SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
+
   srand(time(NULL));
 
   if (strcmp(piece, "line_tiles") == 0) {
     drawLineTiles(renderer);
   } else if (strcmp(piece, "static_dust") == 0) {
     drawStaticDust(renderer);
+  } else if (strcmp(piece, "poly_place") == 0) {
+    drawPolyPlace(renderer);
   } else {
     printf("Unkown peice\n");
     exit(1);
