@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include "./circle_explosion/circle_explosion.h"
 #include "./line_tiles/line_tiles.h"
 #include "./poly_place/poly_place.h"
 #include "./static_dust/static_dust.h"
@@ -36,6 +37,8 @@ int main(int argc, char *argv[]) {
     drawStaticDust(renderer);
   } else if (strcmp(piece, "poly_place") == 0) {
     drawPolyPlace(renderer);
+  } else if (strcmp(piece, "circle_explosion") == 0) {
+    drawCircleExplosion(renderer);
   } else {
     printf("Unkown peice\n");
     exit(1);
