@@ -7,6 +7,7 @@
 
 #include "./circle_explosion/circle_explosion.h"
 #include "./line_tiles/line_tiles.h"
+#include "./not_a_circle/not_a_circle.h"
 #include "./poly_place/poly_place.h"
 #include "./static_dust/static_dust.h"
 
@@ -39,6 +40,8 @@ int main(int argc, char *argv[]) {
     drawPolyPlace(renderer);
   } else if (strcmp(piece, "circle_explosion") == 0) {
     drawCircleExplosion(renderer);
+  } else if (strcmp(piece, "not_a_circle") == 0) {
+    drawNotACircle(renderer);
   } else {
     printf("Unkown peice\n");
     exit(1);
