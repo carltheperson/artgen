@@ -1,6 +1,6 @@
 <h1 align="center">Artgen</h1>
 
-<p align="center">My toy <a href="https://en.wikipedia.org/wiki/Generative_art">generativ art</a> project written in C with the SDL library</p>
+<p align="center">My toy <a href="https://en.wikipedia.org/wiki/Generative_art">generative art</a> project written in C with the SDL library</p>
 
 # Pieces
 
