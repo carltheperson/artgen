@@ -21,7 +21,6 @@ void drawSquareRoations(SDL_Renderer *renderer) {
   int squareAmount = 90;
   for (int i = 0; i <= squareAmount; i++) {
     float rotation = 0.045 * i;
-    // float rotation = 0;
     float size = ((endSize - startSize) / squareAmount) * i;
     float halfSize = size / 2;
     float middleX = SCREEN_WIDTH / 2;
@@ -57,13 +56,5 @@ void drawSquareRoations(SDL_Renderer *renderer) {
     };
 
     SDL_RenderDrawLines(renderer, points, 5);
-
-    // SDL_FRect rect = {
-    //     .h = size,
-    //     .w = size,
-    //     .x = 400 - halfSize,
-    //     .y = 400 - halfSize,
-    // };
-    // SDL_RenderDrawRectF(renderer, &rect);
   }
 }
