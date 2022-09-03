@@ -28,7 +28,7 @@ void drawNotACircle(SDL_Renderer* renderer) {
 
   float lineAmount = 40;
   float lineSpacing = (M_PI * 2) / lineAmount;
-  float lineExtraScale = 1000;
+  float lineExtraScale = 350;
 
   // Tagent lines
   for (float l = 0; l <= M_PI * 2; l += lineSpacing) {
