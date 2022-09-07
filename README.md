@@ -2,7 +2,7 @@
 
 <p align="center">My toy <a href="https://en.wikipedia.org/wiki/Generative_art">generative art</a> project written in C with the SDL library</p>
 
-p align="center"><b>Read the blog post about this project <a href="https://carltheperson.com/posts/artgen/">here</a></b></p>
+<p align="center"><b>Read the blog post about this project <a href="https://carltheperson.com/posts/artgen/">here</a></b></p>
 
 # Pieces
 
